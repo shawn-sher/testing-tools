@@ -1,0 +1,14 @@
+# This is an example info file
+proxies: &proxies
+  http: localhost:8080
+  https: localhost:8080
+
+tester_url:
+  proxies: *proxies
+  url: http://testerurl.foo.com/foobar.html
+  referer: http://testerurl.foo.com/
+  passwd: muchpasswordwow
+  user: foobar
+  cookies: {'id': '00000000',
+            'foo': 'hoge',
+            'bar': 'piyo'}
